@@ -2,6 +2,7 @@
 
 A device which provides the wearer a privacy-respecting way to monitor and share their risk of contracting or transmitting COVID-19 (or other communicable diseases) based on contact with others.
 
+
 ## Status
 
 Prototype firmware is in-progress while prototype hardware is being procured.  A simulation to test basic effectiveness is being written and will be included in this repository for review as soon as something functional exists.
@@ -37,6 +38,8 @@ When one device ("A") detects another device ("B") the following occurs:
 
 
 ## Usage
+
+*note: this section describes the prototype device and as such is subject to change as the design evolves.*
 
 The device is worn (or carried, depending on the exact implementation) when the user leaves their residence.  When the wearer's risk crosses a threshold this is indicated by illuminating the corresponding LED (for example: red = isolate, yellow = only essential interactions, green = no risk, etc. Exact thresholds have not yet been defined, see below).  When the wearer is in an area of heightened risk, status is displayed in "real-time", allowing the wearer to alter their location temporarilly to reduce risk of transmission.
 
