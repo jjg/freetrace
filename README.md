@@ -1,6 +1,11 @@
-# freetrace
+# Freetrace
 
 A device which provides the wearer a privacy-respecting way to monitor and share their risk of contracting or transmitting COVID-19 (or other communicable diseases) based on contact with others.
+
+## Status
+
+Prototype firmware is in-progress while prototype hardware is being procured.  A simulation to test basic effectiveness is being written and will be included in this repository for review as soon as something functional exists.
+
 
 ## Distinguishing Features
 
@@ -8,15 +13,7 @@ A device which provides the wearer a privacy-respecting way to monitor and share
 * **Accessibility:** Freetrace requires no special skills or experience to operate and is language-agnostic
 * **Reliability:** Freetrace has no screen, no glass and only one connector (to charge the battery) which makes it possible to be constructed in a much more durable way than a smartphone 
 * **Cost:** Freetrace's hardware far less inexpensive than a smartphone, making it practical for a much wider range of people (including children)
-
-## Usage
-
-The device is worn (or carried, depending on the exact implementation) when the user leaves their residence.  When the wearer's risk crosses a threshold this is indicated by illuminating the corresponding LED (for example: red = isolate, yellow = only essential interactions, green = no risk, etc. Exact thresholds have not yet been defined, see below).  When the wearer is in an area of heightened risk, status is displayed in "real-time", allowing the wearer to alter their location temporarilly to reduce risk of transmission.
-
-If the wearer has been diagnosed, a switch on the device is used to indicate this and the device will broadcast the wearers status to reflect maximum risk until the wearer has recovered from the infection.
-
->Internally, status based on the number of minutes since contact (direct or indirect) with a diagnosed person.  Ranges can be established to provide recommendations for behavior changes to reduce the chances of spreading or contracting the infection.
-
+* **Open:** Because the design and the software are free and open, Freetrace devices can be built by anyone with access to the raw materials, reducing the need for centralized mass-production and distribution (which can be difficult and unsafe under pandemic conditions).  This also allows the design to be modified to accomodate unanticipated user's needs, and as long as the basic theory of operation remains unchanged, modified devices will be compatible with eachother and the original design.
 
 
 ## Theory of Operation
@@ -37,6 +34,15 @@ When one device ("A") detects another device ("B") the following occurs:
 
 1. Device A adds device B's MAC address and status to its list
 2. Device B adds device A's MAC address and status to its list
+
+
+## Usage
+
+The device is worn (or carried, depending on the exact implementation) when the user leaves their residence.  When the wearer's risk crosses a threshold this is indicated by illuminating the corresponding LED (for example: red = isolate, yellow = only essential interactions, green = no risk, etc. Exact thresholds have not yet been defined, see below).  When the wearer is in an area of heightened risk, status is displayed in "real-time", allowing the wearer to alter their location temporarilly to reduce risk of transmission.
+
+If the wearer has been diagnosed, a switch on the device is used to indicate this and the device will broadcast the wearers status to reflect maximum risk until the wearer has recovered from the infection.
+
+>Internally, status based on the number of minutes since contact (direct or indirect) with a diagnosed person.  Ranges can be established to provide recommendations for behavior changes to reduce the chances of spreading or contracting the infection.
 
 
 ## Proposed Implementation (PROTOTYPE)
