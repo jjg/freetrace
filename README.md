@@ -11,7 +11,7 @@ A device which provides the wearer a privacy-respecting way to monitor and share
 
 ## Usage
 
-The device is worn (or carried, depending on the exact implementation).  When the wearer's risk crosses a threshold this is indicated by illuminating the corresponding LED (exact thresholds have not yet been defined, see below).  When the wearer is in an area of heightened risk, status is displayed in "real-time", allowing the wearer to alter their location temporarilly to reduce risk of transmission.
+The device is worn (or carried, depending on the exact implementation) when the user leaves their residence.  When the wearer's risk crosses a threshold this is indicated by illuminating the corresponding LED (for example: red = isolate, yellow = only essential interactions, green = no risk, etc. Exact thresholds have not yet been defined, see below).  When the wearer is in an area of heightened risk, status is displayed in "real-time", allowing the wearer to alter their location temporarilly to reduce risk of transmission.
 
 If the wearer has been diagnosed, a switch on the device is used to indicate this and the device will broadcast the wearers status to reflect maximum risk until the wearer has recovered from the infection.
 
